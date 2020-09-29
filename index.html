@@ -3,11 +3,29 @@
   <head> 
     <link rel="stylesheet" href="./style.css"> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-database.js"></script>
   </head>
   
   <body> 
-  <h1> testing.. </h1>
-    <script type="module" src="./script.js" async></script> 
+    <div id = 'questionBox' class 'box'>
+      <div id = 'wordBox'>
+        <h3 id = 'intro'> Find the rhymes to </h3>
+        <h1 id = 'word'>...</h1>
+      </div>
+      <div id = 'inputBox'>
+        <input id = 'wordinput'> 
+        <button id = 'submit'> submit </button>
+      </div>
+      <p id ='feedback'></p>
+    </div>
+  
+    
+    <div id = 'hintBox' class ='box'>
+      <h3> Hints </h3>
+      <ul id = 'rhymes'> </ul>
+      <script type="module" src="./script.js" async></script> 
+    </div>
   </body>
   
 </html>
