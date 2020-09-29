@@ -1,1 +1,70 @@
 
+body{
+  text-align: center;
+  padding: 20px 20%;
+  background-color: white;
+  color: black;
+  font-family: sans-serif;
+  margin:0px;
+}
+@media only screen and (max-width: 980px) {
+  body {
+   padding: 20px 10%;
+  }
+}
+
+ul{
+  padding: 0px;
+  list-style-position: outside;
+  list-style-type: none;
+}
+
+li{
+  padding:20px;
+  margin: 30px;
+  background-color: white;
+  color: black;
+}
+
+.box{
+  margin: 30px;
+}
+
+#hintBox{
+  background-color: black;
+  color: white;
+  padding: 30px;
+}
+
+.found, #wordBox{
+  background-color:#64e89d;
+}
+
+#wordBox{
+  display:block;
+  padding: 45px 10px;
+  border-radius:50%;
+  margin-bottom: 10px;
+}
+
+#inputBox, #questionBox{
+  display:inline-block;
+}
+#questionBox{
+  margin-top:50px;
+}
+
+#feedback{
+  border-radius: 5px;
+  padding: 5px 0px;
+  width: 165px;
+  margin:0px;
+  font-size: 10pt;
+}
+
+.word{
+  font-weight: bold;
+  font-size: 14pt;
+  margin:0px;
+  padding-bottom: 5px;
+}
