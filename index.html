@@ -1,34 +1,41 @@
 <html>
-  
-  <head> 
-    <link rel="stylesheet" href="style.css"> 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-database.js"></script>
-  </head>
-  
-  <body> 
-    <div id = 'questionBox' class='box'>
-     
-      <div id = 'wordBox'>
-        <h3 id = 'intro'> Find the rhymes to </h3>
-        <h1 id = 'word'>...</h1>
-      </div>
-      <div id = 'inputBox'>
-        <input id = 'wordinput'> 
-        <button id = 'submit'> submit </button>
-      </div>
-      <p id ='feedback'></p>
-    </div>
-  
-    
-    <div id = 'hintBox' class ='box'>
-      <h3> Rhyme Hints </h3>
-      <ul id = 'rhymes'> </ul>
-    </div>
 
-                
-      <script type="module" src="script.js" async></script> 
-  </body>
-  
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-database.js"></script>
+</head>
+
+<body>
+
+
+  <div id='questionBox' class='box'>
+
+    <div id='wordBox'>
+      <h3 id='intro'> Find the rhymes to </h3>
+      <h1 id='word'>...</h1>
+    </div>
+    <div id='inputBox'>
+      <input id='wordinput'>
+      <button id='submit'> submit </button>
+    </div>
+    <p id='feedback'></p>
+
+  </div>
+
+  <div id='end'>
+    <h4>All rhymes found! Play again?</h4>
+    <button id='replay'>Replay</button>
+  </div>
+
+  <div id='hintBox' class='box'>
+    <h3> Rhyme Hints </h3>
+    <ul id='rhymes'> </ul>
+  </div>
+
+
+  <script type="module" src="script.js" async></script>
+</body>
+
 </html>

@@ -40,8 +40,15 @@ li{
   padding: 30px;
 }
 
-.found, #wordBox{
+.found, #wordBox, #end{
   background-color:#64e89d;
+}
+
+#end{
+  position: static;
+  text-align: center;
+  padding: 10px;
+  display:none;
 }
 
 #wordBox{
