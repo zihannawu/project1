@@ -39,7 +39,7 @@ function setRhymes(word){
             url: "https://api.datamuse.com/words?md=d&rel_rhy="+ word,
             headers: {"Accept":"application/json"},
             success: function(data){
-                for(i=0; i<10; i++){
+                for(let i=0; i<10; i++){
                    let wordObj = data[i];
                    wordObj.found = false;
                    db.ref('rhymes').push(wordObj);
