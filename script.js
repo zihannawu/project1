@@ -1,4 +1,3 @@
-
   var firebaseConfig = {
     apiKey: "AIzaSyDcpq1bIJrzApXDOytuAnQF7kaHzR5X3so",
     authDomain: "project1-4f8ad.firebaseapp.com",
@@ -15,7 +14,7 @@ let db = firebase.database();
 let green = '#64e89d';
 let yellow = '#ffff80';
 let red = '#ff8080';
-let bgcolor = $('body').css('background-color');
+let bgcolor = 'transparent';
 
 function setFeedback(message, color){
      $('#feedback').text(message);
