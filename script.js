@@ -73,7 +73,7 @@ db.ref('rhymes').on('child_added', ss=>{
  *if found, set it's found var to true. clear input
  */
 $('#submit').on('click', function(){
-   let iword = $('#wordinput').val();
+   let iword = $('#wordinput').val().toLowerCase();
 
    db.ref('rhymes').orderByChild('word').equalTo(iword).once('value', ss=>{
        if(ss.exists()){
